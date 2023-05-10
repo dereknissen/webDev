@@ -11,6 +11,9 @@
         <body>
             this is what the body text looks like
         </body>
+        <button> <!-- button -->
+            test
+        </button>
         <p>paragraph</p>
         <h1>this is a <em>new </em>header</h1> <!-- the em is italic -->
         <p>and this is <strong>another paragraph</strong> <br> this is a paragraph break </p>
@@ -45,6 +48,19 @@
             }
             a {
                 color: blue;
+            }
+            button {
+                border-color: white;
+                background-color: rgb(22,22,22);
+                border-radius: 10px; /* for round corners */
+                width: 250px;
+                height: 200px;
+                color: white;
+                transition-duration: .5s; /* how long the button takes to change animations (hovering) */
+            }
+            button:hover { /* when the mouse hovers over the button */
+                background-color: white;
+                color: black;
             }
 
         </style>
