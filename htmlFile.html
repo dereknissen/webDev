@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- determines that this html file is a modern and correct file -->
+<html> <!-- this is how to comment, yuck -->
+    <head>
+        <meta charset = "utf-8">
+        <title>
+            my webpage title
+        </title>
+        <h1>
+            this is the actual title that will be shown
+        </h1>
+        <body>
+            this is what the body text looks like
+        </body>
+        <p>paragraph</p>
+        <h1>this is a <em>new </em>header</h1> <!-- the em is italic -->
+        <p>and this is <strong>another paragraph</strong> <br> this is a paragraph break </p>
+
+        <h1>this is an example of a list</h1>
+        <ul> <!-- unordered list, bullet points -->
+            <li>This is an item</li> <!-- list item -->
+            <li>This is another item</li>
+        </ul>
+        <ol> <!-- ordered list, numbered in order -->
+            <li>item1</li>
+            <li>item2</li>
+        </ol>
+
+        <!-- image time :) -->
+        <img src = "porschePicture.jpg" alt = "Picture of a porsche" width = 300> <!-- the alt is if the image does not load -->
+
+        <!-- and now css time -->
+        <style>
+            h1 {
+                color: rgb(228, 201, 159); /* this is how you comment in css, you can also use a color name */
+            }
+            body {
+                background-color: rgb(22,22,22);
+                color: rgb(250, 250, 250); /* the color of the text inside of the body, this is only one line in this case */
+            }
+            p {
+                color: rgb(250,250,250);
+            }
+            h1[id = "i am an id"] {
+                color: rgb(250,250,250);
+            }
+            a {
+                color: blue;
+            }
+
+        </style>
+
+        <!-- texts with ids -->
+        <h1 id = "i am an id">this is the text that has an identity</h1>
+
+        <!-- url -->
+        <a href = "https://roblox.com">ROBLOX.COM</a> <!-- href stands for hyper reference -->
+
+        <!-- lets make a table -->
+        <table>
+            <thead> <!-- table headers -->
+                <tr> <!-- single row of header cells -->
+                    <th>column 1</th>
+                    <th>column 2</th>
+                    <th>column 3</th>
+                </tr>
+            </thead>
+            <tbody> <!-- table data/rows -->
+                <tr> <!-- table row -->
+                    <td>i am a value in column 1</td><!-- tabular data -->
+                    <td> i am a value in column 2</td>
+                    <td> i am a value in column 3</td>
+                </tr>
+                <tr> <!-- table row -->
+                    <td>i am another value in column 1</td><!-- tabular data -->
+                    <td> i am another value in column 2</td>
+                    <td> i am another value in column 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </head>
+</html>
