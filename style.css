@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgb(30, 30, 30);
+    height: 80px;
+    width: 100%;
+
+}
+
+label.title {
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float:right; /* orders horizontally */
+    margin-right: 20px; /* prevents from sticking to the right side of screen */
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
