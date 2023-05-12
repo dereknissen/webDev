@@ -1,3 +1,4 @@
+/* DEFAULTS */
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +7,12 @@
     box-sizing: border-box;
 }
 
+/* NAVIGATION BAR */
 nav {
     background: rgb(30, 30, 30);
     height: 80px;
     width: 100%;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 label.title {
@@ -29,5 +31,47 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 20px; /* distance between buttons */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 0px 10px white;
+    /* in order: x offset, y offset, blur size color */
+    font-size:larger;
+    transition-duration: .5s;
+}
+
+nav ul li a {
+    color:white;
+    transition-duration: .5s;
+}
+
+/* BODY DEVELOPMENT */
+div[id = "main body"] {
+    display: grid;
+    grid-template-columns: 10% 60% 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(35,35,35);
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    color: white;
+    float:right;
+}
+
+img[id = "senior photo"] {
+    width: 50%;
+    transition-duration: .5s;
+    margin-right: 50%;
+    /* center the items */
+    display: flex;
+    justify-content: center;
+}
+
+img[id = "senior photo"]:hover {
+    width: 45%;
+    transition-duration: .5s;
+
 }

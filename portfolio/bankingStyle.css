@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: white;
+}
+
+/* TOP OF SCREEN */
+
+.banner {
+    width: 100%;
+    height: 100vh; /* the viewport height */
+    background-image: linear-gradient(rgba(22,22,22,.7), rgba(22,22,22.7)), url("bankPhoto.jpg"); /* the linear gradient is for the dark grey overlay */
+    background-size: cover;
+    background-position: center;
+}
+
+.navButton {
+    color: white;
+    text-decoration: none; /* remove the underline */
+    float:right; /* puts them in a horizontal line on the right */
+    margin: 20px; /* splits them apart */
+    margin-top: 15px;
+    transition-duration: .5s; /* for off of the hover */
+}
+
+.navButton:hover {
+    text-shadow: 0 0 10px white; /* x offset y offset radius color */
+    font-size: larger;
+    transition-duration: .5s; /* for on the hover */
+}
+
+.navigationBar {
+    background-color: rgb(22,22,22);
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+}
+
+.title {
+    color:white;
+    position:absolute; /* doesn't get messed up inside of the unordered list */
+    margin-top: 15px; /* move off of the top of the screen */
+    margin-left: 20px; /* move off of the left of the screen */
+    font-size: larger; /* make font a little bigger */
+}
+
+/* MIDDLE OF PAGE */
+
+.middle {
+    width: 100%;
+    height: 300px;
+}
+
+.centerText {
+    color: white;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    transform: translateY(20%);
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
+/* DEAL OFFER */
+
+.dealText {
+    position: absolute;
+    transform: translateY(80%);
+    margin-left: 10%;
+    width: 500px;
+    height: 200px;
+    display: grid;
+    column-count: 2;
+    grid-template-columns: 40% 60%;
+    /* column-gap: 20px; NOT NEEDED BECAUSE OF THE ALIGNMENT IN THE GRID */
+}
+
+.dealLeftSection {
+    grid-column: 1;
+    column-span: 1;
+    text-align: center;
+}
+
+.dealAmountText {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.dealLargeText {
+    font-size: 20px;
+}
+.dealTitle {
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.dealDesc {
+    position: absolute;
+    transform: translateY(20%)
+}
+
+.dealRightSection {
+    grid-column: 2;
+    column-span: 1;
+    text-align: left;
+}
+
+.dealButton {
+    position: absolute;
+    border-radius: 5px;
+    transform: translateY(55px);
+    width:200px;
+    height: 30px;
+    background-color: rgb(0, 134, 183);
+    text-decoration: none;
+    text-align: center;
+    transition-duration: .5s;
+    line-height: 30px;
+}
+
+.dealButton:hover {
+    box-shadow: 0 0 10px rgb(0, 134, 183);
+    transition-duration: .5s;
+}
