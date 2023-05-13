@@ -124,3 +124,11 @@
     box-shadow: 0 0 10px rgb(0, 134, 183);
     transition-duration: .5s;
 }
+
+.thirdSection {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    transform: translateY(400px)
+}
